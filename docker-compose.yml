@@ -74,6 +74,8 @@ services:
     - netbox-redis-cache-data:/data
 
 volumes:
+  netbox-config:
+    driver: local
   netbox-media-files:
     driver: local
   netbox-postgres-data:
